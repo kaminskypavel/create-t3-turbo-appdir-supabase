@@ -1,3 +1,11 @@
+# ⚠️⚠️  WIP ⚠️⚠️
+
+this is a fork of `create-t3-turbo` attempting
+
+- Remove expo ✅
+- [Migrate] PlanteScale => Supabase ⚒️
+- [Migrate] Drizzle => Prisma ⚒️
+
 # create-t3-turbo
 
 > **Note**
