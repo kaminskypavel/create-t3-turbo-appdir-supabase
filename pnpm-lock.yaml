@@ -201,6 +201,22 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
+  packages/db:
+    dependencies:
+      '@prisma/client':
+        specifier: ^4.12.0
+        version: 4.12.0(prisma@4.12.0)
+    devDependencies:
+      dotenv-cli:
+        specifier: ^7.1.0
+        version: 7.3.0
+      prisma:
+        specifier: ^4.12.0
+        version: 4.12.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.2.2
+
   packages/db-drizzle:
     dependencies:
       '@planetscale/database':
@@ -1313,6 +1329,28 @@ packages:
     resolution: {integrity: sha512-XMfNRjIPgGTga6g1YpGr7E21CcnHZcHZdyhRUIiZ/AlpD+ts65UF2B3wKjcu7MKMynmmcOGs6R9kAT6D1OTlZQ==}
     engines: {node: '>=16'}
     dev: false
+
+  /@prisma/client@4.12.0(prisma@4.12.0):
+    resolution: {integrity: sha512-j9/ighfWwux97J2dS15nqhl60tYoH8V0IuSsgZDb6bCFcQD3fXbXmxjYC8GHhIgOk3lB7Pq+8CwElz2MiDpsSg==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7
+      prisma: 4.12.0
+    dev: false
+
+  /@prisma/engines-version@4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7:
+    resolution: {integrity: sha512-JIHNj5jlXb9mcaJwakM0vpgRYJIAurxTUqM0iX0tfEQA5XLZ9ONkIckkhuAKdAzocZ+80GYg7QSsfpjg7OxbOA==}
+    dev: false
+
+  /@prisma/engines@4.12.0:
+    resolution: {integrity: sha512-0alKtnxhNB5hYU+ymESBlGI4b9XrGGSdv7Ud+8TE/fBNOEhIud0XQsAR+TrvUZgS4na5czubiMsODw0TUrgkIA==}
+    requiresBuild: true
 
   /@sindresorhus/is@0.14.0:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
@@ -4036,6 +4074,14 @@ packages:
   /pretty-format@3.8.0:
     resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
     dev: false
+
+  /prisma@4.12.0:
+    resolution: {integrity: sha512-xqVper4mbwl32BWzLpdznHAYvYDWQQWK2tBfXjdUD397XaveRyAP7SkBZ6kFlIg8kKayF4hvuaVtYwXd9BodAg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.12.0
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
