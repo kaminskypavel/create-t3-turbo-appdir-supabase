@@ -32,9 +32,9 @@ importers:
       '@acme/auth':
         specifier: ^0.1.0
         version: link:../../packages/auth
-      '@acme/db':
+      '@acme/db-drizzle':
         specifier: ^0.1.0
-        version: link:../../packages/db
+        version: link:../../packages/db-drizzle
       '@t3-oss/env-nextjs':
         specifier: ^0.6.1
         version: 0.6.1(typescript@5.2.2)(zod@3.22.2)
@@ -117,9 +117,9 @@ importers:
       '@acme/auth':
         specifier: ^0.1.0
         version: link:../auth
-      '@acme/db':
+      '@acme/db-drizzle':
         specifier: ^0.1.0
-        version: link:../db
+        version: link:../db-drizzle
       '@trpc/client':
         specifier: ^10.38.0
         version: 10.38.0(@trpc/server@10.38.0)
@@ -154,9 +154,9 @@ importers:
 
   packages/auth:
     dependencies:
-      '@acme/db':
+      '@acme/db-drizzle':
         specifier: ^0.1.0
-        version: link:../db
+        version: link:../db-drizzle
       '@auth/core':
         specifier: ^0.12.0
         version: 0.12.0
@@ -201,7 +201,7 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  packages/db:
+  packages/db-drizzle:
     dependencies:
       '@planetscale/database':
         specifier: ^1.10.0
